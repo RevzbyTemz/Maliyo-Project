@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    --primary: rgb(226, 99, 44);
+}
+
+/* :root {
+    $primary: rgb(226, 99, 44);
+} */
+
+
+
+body{
+    height: 100vh;
+}
+   .card{
+    width: 700px;
+    height: 500px;
+    background-color: transparent;
+    margin: 60px;
+    position: absolute;
+    top: 10px;
+     box-shadow: none;
+   
+} 
+
+.card-image {
+    position: absolute;
+width: 484px;
+height: 300.09px;
+left: -18px;
+top: -5px;
+
+}   
+
+
+/* -----------------form section------------------- */
+    .container{
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        right: 300px;
+        top: 230px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .columns{
+        display: flex;
+        flex-direction: column;
+    }
+    .column{
+        margin-bottom: -15px ;
+    }
+
+    label{
+        font-size: 10px;
+    }
+
+    .content> p{
+        margin-top: -7px;
+        opacity: .5;
+    }
+
+    .input{
+        width: 300px;
+        font-size: 18px;
+        height: 40px;
+    }
+
+    .select select{
+        width: 150px;
+        height: 40px;
+        color: black;
+        border-radius: 1px;
+        /* position: absolute;
+        top: 80px; */
+    } 
+
+    .button{
+        position: absolute;
+        top: -20px; 
+        left: -16%;
+        width: 80px;
+        height: 30px;
+        margin: 10px;
+        transform: translate(50%, 50%);
+        border-radius: 2px;
+        background-color: hsla(18, 76%, 53%, 1);
+    }
+        
+    
+    .field input::placeholder{
+        position: absolute;
+        left: 7px;
+        top: 10px;
+        text-align: start;
+        font-size: 10px;
+        opacity: .9;
+    }
+
+
+
+
+/* ---------------responsiveness---------------- */
+
+@media(max-width: 700px){
+
+    
+    .navbar-brand, .logo-image{
+        margin-top: 30px;
+        margin-left: 10px;
+        width: 112px;
+        height: 48px;
+    }
+    .brand-image, .card, .card-image{
+        position: absolute;
+        top: 60px;
+        left: 25px;
+        width: 384px;
+        /* display: none;
+        visibility: hidden; */
+    }
+
+    .container{
+        width: 570px;
+        height: 1000px;
+        position: absolute;
+        left: 90px;
+        display: inline-block;
+    }
+
+    .input{
+        width: 430px;
+        height: 60px;
+        font-size: 20px;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        border: 1px solid rgba(0, 0, 0, 0.322);
+        margin-bottom: 30px;
+        margin-top: 5px;
+
+    }
+
+    .select select{
+        width: 430px;
+        height: 40px;
+        color: black;
+        border-radius: 1px;
+        height: 55px;
+        margin-bottom: 15px;
+        outline: none;
+        /* position: absolute;
+        top: 80px; */
+    } 
+
+    .content> p{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .content h1{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .content{
+        position: absolute;
+        top: 500px;
+        left: 30px  
+    }
+
+     .columns{
+        margin-top: 40px; 
+        position: absolute;
+        top: 600px;  
+        left: 30px;
+    } 
+
+    label{
+        font-size: 25px;
+        opacity: .8;
+    }
+
+    .field input::placeholder{
+        position: absolute;
+        left: 9px;
+        top: 20px;
+        text-align: start;
+        font-size: 18px;
+        opacity: .8;
+        font-weight: 700;
+    }
+
+    .button{
+        width: 120px;
+        height: 50px;
+        position: relative;
+        left: -70px;
+        font-size: 20px;
+        background-color: hsla(18, 76%, 53%, 1);
+        color: white;
+        outline: none;
+        border: none;
+}
+
